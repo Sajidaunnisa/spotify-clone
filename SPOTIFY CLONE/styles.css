@@ -1,0 +1,444 @@
+/*general part*/
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+/*sidebar part*/
+
+.sidebar{
+    position:fixed;
+    top: 60px;
+    left:0;
+    padding-top: 5px;
+    padding-left: 25px;
+    width: 263px;
+    height: 93px;
+    background-color: rgb(23, 23, 23);
+    border-radius: 10px;
+    margin:7px 8px;
+    
+}
+.sidebar .navigation ul{
+    list-style: none;
+    margin-top: 5px;
+}
+.sidebar .navigation ul li{
+    padding: 7px 0px;
+}
+.sidebar .navigation ul li a{
+    color:rgb(146, 151, 151) ;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+
+.sidebar .navigation ul li a .fa{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sidebar .navigation ul li a:hover,
+.down-sidebar .library ul li a:hover{
+  color: white;
+}
+ 
+.down-sidebar{
+    position: fixed;
+    left:0;
+    top: 170px;
+    width: 240px;
+    height: 330px;
+    padding: 24px;
+    padding-top: 15px;
+    margin-left: 7px;
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    margin-bottom: 100px;
+}
+
+.down-sidebar .library{
+    color: rgb(146, 151, 151); 
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+}
+.down-sidebar .library .fa{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.down-sidebar .library .fa:hover{
+   color: white;
+}
+.down-sidebar .library .fas{
+    font-size: 20px;
+    padding:5px 7px;
+    margin: 0px;
+}
+.down-sidebar .library .fas:hover{
+    color: white;
+
+}
+.down-sidebar .library ul{
+    list-style: none;
+    margin-top: 0px;
+}
+.down-sidebar .library ul li{
+    padding: 10px 0px;
+}
+.down-sidebar .library ul li a{
+    color: rgb(146, 151, 151);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.down-sidebar .library ul li a .fa{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.down-sidebar .library .l-button{
+margin: 0px;
+padding: 5px;
+
+}
+.down-sidebar .library .l-button .fa{
+    color:rgb(146, 151, 151) ;
+    font-size: 17px;
+    padding: 7px;
+    margin: 5px;
+}
+.down-sidebar .library .l-button .fa:hover{
+    color: white;
+    background-color: rgb(52, 51, 51);
+    border-radius: 100%;
+}
+.down-sidebar .playlist{
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 9px 14px 9px 14px;
+    background-color: rgb(47, 46, 46);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 17px;
+}
+.down-sidebar .playlist:hover{
+    background-color: rgb(56, 55, 55);
+}
+.down-sidebar .search-button{
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.down-sidebar .search-button a {
+text-decoration: none;
+}
+.down-sidebar .search-button a .fa{
+    font-size: 16px;
+    color:rgb(146, 151, 151) ;
+    padding: 7px;
+}
+.down-sidebar .search-button a .fa:hover{
+color: white;
+background-color: rgb(31, 30, 30);
+border: none;
+border-radius: 100%;
+}
+
+.down-sidebar .search-button p{
+    color: rgb(146, 151, 151) ;
+    padding-left: 130px;
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.down-sidebar .search-button p:hover{
+    color: white;
+}
+.down-sidebar .recent{
+    display: flex;
+ 
+}
+.down-sidebar .recent:hover{
+    background-color: rgb(55, 55, 55);
+}
+.down-sidebar .recent img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    padding-left: 7px;
+}
+.down-sidebar .recent pre{
+    margin-bottom: -30px;
+}
+
+.down-sidebar .recent pre h3{
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.down-sidebar .recent pre p{
+ color:rgb(146, 151, 151) ;
+margin-left: 10px;
+margin-top: 7px;
+font-size: 14px;
+font-weight: 500;
+}
+.down-sidebar .policies{
+    position: absolute;
+    margin: 0px;
+    bottom:20px ;
+}
+.down-sidebar .policies ul{
+    list-style: none;
+}
+.down-sidebar .policies ul li{
+    padding-bottom: 5px ;
+}
+.down-sidebar .policies ul li a{
+    color: rgb(146, 151, 151);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+.down-sidebar .policies ul li a:hover{
+    text-decoration: underline;
+color: white;
+}
+
+/* this is header part */
+
+.header{
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    background-color: rgb(23, 23, 23);
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    z-index: 1;
+  }
+  .header .logo{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left:10px ;
+  }
+  .header .logo:hover{
+      background-color: black;
+  }
+  .header .signin-login-button{
+      margin-right: 10px;
+      align-items: center;
+  }
+  .header .signin-login-buttons .sign-in-button{
+      background-color: rgb(12, 12, 12);
+      color: rgb(245, 238, 238);
+      font-size: 13px;
+      width: 60px;
+      height: 28px;
+      border: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
+  
+  
+  }
+  
+  .header .signin-login-buttons .sign-in-button:hover{
+      font-size: 14px;
+      background-color: rgb(19, 19, 19);
+      cursor: pointer;
+  }
+  .header .signin-login-buttons .login-button{
+      background-color: white;
+      color: black;
+      font-size: 14px;
+      width: 45px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
+  }
+  .header .signin-login-buttons .login-button:hover{
+    background-color: rgb(72, 70, 70);
+    color: white;
+    font-size:13px ;
+    cursor: pointer;
+  }
+ /*top bar*/
+ 
+ .main-container{
+margin-left: 300px;
+margin-top: 66px;
+margin-bottom: 43px;
+margin-right: 7px;
+height: 2630px;
+background-color:rgb(23, 23, 23);
+border-radius: 10px;
+ }
+ .main-container .topbar{
+    justify-content: space-between;
+    background-color:rgb(23, 23, 23) ;
+    padding: 14px 30px;
+    position: fixed;
+    display: flex;
+width:740px;
+margin-right: 15px;
+border-radius:10px;
+z-index: 1;
+ }
+ .main-container .topbar .prev-next-buttons button{
+color: rgb(146, 151, 151);
+cursor: not-allowed;
+width: 34px;
+height: 34px;
+border-radius: 100%;
+font-size: 18px;
+border: 0px;
+background-color: rgb(15, 15, 15);
+margin-right: 10px;
+position: relative;
+ }
+ .main-container.topbar .navbar{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: absolute;
+ }
+ .main-container .topbar .navbar .premium{
+    background-color: rgb(251, 247, 247);
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    border-radius: 20px;
+    padding: 9px 20px;
+    border: none;
+    position: relative;
+ }
+ .main-container .topbar .navbar .premium:hover{
+    font-size: 13px;
+    cursor: pointer;
+ }
+ .main-container .topbar .navbar .download {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 9px 20px;
+    position:relative;
+ }
+ .main-container .topbar .navbar .download:hover{
+    font-size: 14px;
+    cursor: pointer;
+ }
+ 
+ .main-container .topbar .navbar button {
+    background-color: black;
+    color: rgb(245, 236, 236);
+    border-radius: 100%;
+    border: none;
+    padding: 10px 10px;
+margin-right: 0px;
+    position: relative;
+ }
+ 
+ /* body*/ 
+
+
+
+ .main-container .body .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .main-container .body .list .spotify-playlist{
+     color: white;
+     padding-top: 70px;
+     padding-left: 15px;
+
+ }
+ .main-container .body .list .spotify-playlist:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ .main-container .body .list .show-all{
+    color: rgb(146, 151, 151);
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-right: 15px;
+ }
+ .main-container .body .list .show-all:hover{
+text-decoration: underline;
+cursor: pointer;
+ }
+ .body .song-playlist{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+ .body .song-playlist .item{
+    min-width: 120px;
+    width: 145px;
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+ }
+ .body .song-playlist .item:hover{
+    background-color: rgb(56, 55, 55);
+    cursor: pointer;
+ }
+ .body .song-playlist .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+ }
+ .body .song-playlist .item h4{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+ }
+ .body .song-playlist .item p{
+   color: rgb(146, 151, 151);
+   font-size: 12px;
+   font-weight: 500;
+ }
+ .body .song-playlist .item p:hover{
+    text-decoration: underline;
+ }
+ .body .song-playlist .item .play{
+position: relative;
+ }
+ .body .song-playlist .item .play .fa{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding:15px 17px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity:0;
+    transition: all ease 0.4s;
+ }
+ .body .song-playlist .item:hover .play .fa{
+opacity: 1;
+transform: translateY(-20px);
+ }
